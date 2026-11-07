@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "name": "portable-engineering-skills-platform",
+  "version": "0.2.0",
+  "minimumPython": "3.10",
+  "skills": [
+    "code-review-fast",
+    "design-review-comprehensive",
+    "design-review-lightweight",
+    "engineering-workflow-router",
+    "implementation-review",
+    "independent-multi-model-review",
+    "issue-triage",
+    "pr-description",
+    "pr-follow-through",
+    "requirements-clarification",
+    "review-performance-concurrency",
+    "review-security",
+    "review-silent-failures",
+    "review-simplification",
+    "review-spec-compliance",
+    "review-suite",
+    "review-test-quality",
+    "review-type-interface",
+    "risk-assessment",
+    "root-cause-analysis",
+    "software-design",
+    "specification-authoring",
+    "systematic-debugging",
+    "test-driven-development",
+    "test-planning",
+    "verification-before-completion",
+    "work-item-planning"
+  ],
+  "portableContent": "skills",
+  "runtimePackages": [
+    ".codex-plugin/plugin.json"
+  ],
+  "runtimeAdapters": [
+    "adapters/ollama_review.py"
+  ],
+  "tools": [
+    "tools/route_task.py",
+    "tools/reconcile_reviews.py",
+    "tools/skillsctl.py",
+    "tools/update_platform.py",
+    "tools/validate_skills.py"
+  ]
+}

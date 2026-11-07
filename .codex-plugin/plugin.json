@@ -1,0 +1,37 @@
+{
+  "name": "portable-engineering-skills",
+  "version": "0.2.0",
+  "description": "Portable engineering planning, design, review, debugging, and verification skills.",
+  "author": {
+    "name": "Portable Engineering Skills contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "engineering",
+    "planning",
+    "design",
+    "code-review",
+    "debugging",
+    "verification"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Portable Engineering Skills",
+    "shortDescription": "Route and execute proportionate engineering workflows",
+    "longDescription": "Reusable skills for concise work-item planning, software design, specialized code review, debugging, test planning, and evidence-based verification.",
+    "developerName": "Portable Engineering Skills contributors",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Route this engineering task to the smallest effective workflow.",
+      "Run a comprehensive evidence-based review of this change.",
+      "Turn this discussion into concise actionable work items."
+    ],
+    "brandColor": "#24292F",
+    "screenshots": []
+  }
+}

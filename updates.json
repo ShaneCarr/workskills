@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "platform": {
+    "remote": "origin",
+    "ref": "@current",
+    "validation": [
+      ["{python}", "-m", "unittest", "discover", "-s", "tests", "-q"],
+      ["{python}", "tools/validate_skills.py"],
+      ["{python}", "-m", "compileall", "-q", "tools", "adapters", "tests"]
+    ]
+  },
+  "upstreams": [
+    {
+      "name": "superpowers",
+      "url": "https://github.com/obra/superpowers.git",
+      "pinnedCommit": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "license": "MIT",
+      "kind": "reviewed-source",
+      "adoption": "Concepts adapted into original portable skills; native plugin is not installed by this package."
+    },
+    {
+      "name": "mattpocock-skills",
+      "url": "https://github.com/mattpocock/skills.git",
+      "pinnedCommit": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "license": "MIT",
+      "kind": "reviewed-source",
+      "adoption": "Concepts adapted into original portable skills; upstream files are not copied."
+    },
+    {
+      "name": "anthropic-skills",
+      "url": "https://github.com/anthropics/skills.git",
+      "pinnedCommit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "license": "Per skill",
+      "kind": "reviewed-source",
+      "adoption": "Format and evaluation examples only; not installed by this package."
+    },
+    {
+      "name": "anthropic-pr-review-toolkit",
+      "url": "https://github.com/anthropics/claude-plugins-official.git",
+      "pinnedCommit": "0412be76f50ab4f4f8abff3753efa9269fbbca5b",
+      "license": "Apache-2.0 for the reviewed plugin",
+      "kind": "reviewed-native-plugin",
+      "adoption": "Review perspectives adapted; the Claude Code plugin is not installed or updated by this package."
+    },
+    {
+      "name": "openai-skills-deprecated",
+      "url": "https://github.com/openai/skills.git",
+      "pinnedCommit": "49f948faa9258a0c61caceaf225e179651397431",
+      "license": "Per skill",
+      "kind": "historical-source",
+      "adoption": "Tracked only for provenance; use openai/plugins for current Codex packaging."
+    },
+    {
+      "name": "openai-plugins",
+      "url": "https://github.com/openai/plugins.git",
+      "pinnedCommit": "d420d13051bffe4543ed39e30fa46b87148e47dd",
+      "license": "Plugin specific",
+      "kind": "reviewed-native-plugin-source",
+      "adoption": "Codex packaging format adopted; external native plugins are not installed by this package."
+    },
+    {
+      "name": "essential-kit-skills",
+      "url": "https://github.com/Essential-kit/skills.git",
+      "pinnedCommit": "bbe82cd177cdd183e14ebb68a6d437a3af355b9b",
+      "license": "MIT",
+      "kind": "reviewed-source",
+      "adoption": "Scaling review idea considered; upstream content is not installed."
+    },
+    {
+      "name": "agent-skills-specification",
+      "url": "https://github.com/agentskills/agentskills.git",
+      "pinnedCommit": "83021e2be457a9b6679148719c1f6074f0ad975e",
+      "license": "Apache-2.0 code; CC-BY-4.0 docs",
+      "kind": "format-authority",
+      "adoption": "Portable package metadata is validated against the reviewed specification."
+    },
+    {
+      "name": "azure-devops-mcp",
+      "url": "https://github.com/microsoft/azure-devops-mcp.git",
+      "pinnedCommit": "7f2a6b9fae78903682f4c6328cab17986f3f1cc5",
+      "license": "MIT",
+      "kind": "reviewed-integration",
+      "adoption": "Inactive configuration templates only; no MCP server is installed by this package."
+    }
+  ]
+}
